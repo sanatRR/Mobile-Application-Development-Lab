@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:id="@+id/tbl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp">
+        <TableRow
+            android:layout_margin="10dp">
+            <TextView
+                android:id="@+id/tv_source"
+                android:layout_marginLeft="20dp"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:text="Source"/>
+            <Spinner
+                android:id="@+id/spin_source"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:layout_height="wrap_content" />
+        </TableRow>
+
+        <TableRow
+            android:layout_margin="10dp">
+            <TextView
+                android:id="@+id/tv_des"
+                android:layout_marginLeft="20dp"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:text="Destination"/>
+            <Spinner
+                android:id="@+id/spin_destination"
+                android:layout_marginLeft="20dp"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </TableRow>
+        <TableRow
+            android:layout_margin="10dp">
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_marginLeft="20sp"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:text="Date"/>
+            <TextView
+                android:id="@+id/tv_selectedDate"
+                android:layout_width="5dp"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:text="06/10/2001"/>
+        </TableRow>
+        <TableRow
+            android:layout_margin="10dp">
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_marginLeft="20sp"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:text="Time"/>
+            <TextView
+                android:id="@+id/tv_selectedTime"
+                android:layout_width="5dp"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:text="06/10/2001"/>
+        </TableRow>
+        <TableRow
+            android:layout_margin="10dp">
+            <TextView
+                android:id="@+id/tv_ticket_type"
+                android:layout_marginLeft="20sp"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:text="Ticket Type"/>
+            <ToggleButton
+                android:id="@+id/btn_ticket_type"
+                android:layout_marginLeft="5dp"
+                android:textOn="General"
+                android:textOff="Tatkal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_below="@id/tbl"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"/>
+
+    <Button
+        android:id="@+id/btn_clear"
+        android:layout_below="@id/tbl"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/btn_submit"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clear"/>
+
+</RelativeLayout>

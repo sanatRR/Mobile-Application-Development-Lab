@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".DetailsActivity"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+    <TableLayout
+        android:id="@+id/tbl_details"
+        android:layout_margin="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <TextView
+                android:text="Vehicle Type:"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:id="@+id/tv_vehicletype"
+                android:layout_marginLeft="10dp"
+                android:text="Vehicle type placeholder"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </TableRow>
+
+
+        <TableRow>
+            <TextView
+                android:text="Vehicle Number:"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:id="@+id/tv_vehicleNumber"
+                android:layout_marginLeft="10dp"
+                android:text="Vehicle Number placeholder"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </TableRow>
+
+
+        <TableRow>
+            <TextView
+                android:text="RC Number:"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:id="@+id/tv_rcNumber"
+                android:layout_marginLeft="10dp"
+                android:text="RC Number placeholder"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/btn_confirm"
+        android:layout_below="@id/tbl_details"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:text="Confirm"/>
+
+    <Button
+        android:id="@+id/btn_edit"
+        android:layout_below="@id/tbl_details"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/btn_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit"/>
+
+
+
+</RelativeLayout>

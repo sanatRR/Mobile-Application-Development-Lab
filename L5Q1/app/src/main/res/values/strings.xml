@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">L5Q1</string>
+    <string-array name="vehicle_type">
+        <item>Car</item>
+        <item>Bike</item>
+        <item>Truck</item>
+        <item>Bus</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

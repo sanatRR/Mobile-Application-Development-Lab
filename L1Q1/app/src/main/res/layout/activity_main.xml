@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/TL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/topleft"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:textColor="@color/red"
+        android:textStyle="bold"
+        android:textAppearance="?android:textAppearanceMedium"/>
+
+    <TextView
+        android:id="@+id/TR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TopRight"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/dark_blue"
+        android:textStyle="bold"
+        android:textAppearance="?android:textAppearanceMedium"/>
+
+    <TextView
+        android:id="@+id/C"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Center"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/yellow"
+        android:textStyle="italic"
+        android:textAppearance="?android:textAppearanceLarge"/>
+
+    <TextView
+        android:id="@+id/BL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BottomLeft"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:textColor="@color/turquoise"
+        android:textStyle="normal"
+        android:textAppearance="?android:textAppearanceSmall"/>
+
+    <TextView
+        android:id="@+id/BR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BottomRight"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/purple_500"
+        android:textStyle="normal"
+        android:textAppearance="?android:textAppearanceSmall"/>
+</RelativeLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/opt_homepage"
+        android:icon="@drawable/ic_home_page"
+        android:title="homepage"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/opt_about_us"
+        android:icon="@drawable/ic_about_us"
+        android:title="About Us"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/opt_contact_us"
+        android:icon="@drawable/ic_contact_us"
+        android:title="Contact Us"
+        app:showAsAction="always"/>
+
+
+    <item
+        android:id="@+id/opt_courses"
+        android:title="courses"
+        app:showAsAction="never"/>
+
+
+    <item
+        android:id="@+id/opt_admission"
+        android:title="admission"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/opt_faculty"
+        android:title="faculty"
+        app:showAsAction="never"/>
+
+
+</menu>

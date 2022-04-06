@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">L5Q3</string>
+    <string-array name="location">
+        <item>Ahmedabad</item>
+        <item>Bangalore</item>
+        <item>Calcutta</item>
+        <item>Chennai</item>
+        <item>Delhi</item>
+        <item>Goa</item>
+        <item>Hyderabad</item>
+        <item>Indore</item>
+        <item>Kashmir</item>
+        <item>Lucknow</item>
+        <item>Mumbai</item>
+        <item>Nagpur</item>
+        <item>Pune</item>
+        <item>Udaipur</item>
+    </string-array>
+</resources>
