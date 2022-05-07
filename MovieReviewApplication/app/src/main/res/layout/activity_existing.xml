@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Existing">
+
+    <TableLayout
+        android:id="@+id/tbl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp">
+        <TableRow>
+            <TextView
+                android:id="@+id/tv_movie_name"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Movie Name"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/tv_movie_name_Res"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:hint="3 idiots.."
+                android:layout_marginLeft="20dp"
+                android:textAppearance="?android:textAppearanceMedium"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/tv_year"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Year"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/tv_yearRes"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:hint="2008"
+                android:layout_marginLeft="20dp"
+                android:inputType="number"
+                android:textAppearance="?android:textAppearanceMedium"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/tv_rating"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Rating"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textStyle="bold"/>
+            <RatingBar
+                android:id="@+id/ratingRes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:numStars="5"
+                android:stepSize="0.5"
+                android:isIndicator="true"/>
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

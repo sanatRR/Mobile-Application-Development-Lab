@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:id="@+id/tbl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp">
+        <TableRow>
+            <TextView
+                android:id="@+id/tv_movie_name"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Movie Name"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textStyle="bold"/>
+            <EditText
+                android:id="@+id/et_movie_name"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:hint="3 idiots.."
+                android:layout_marginLeft="20dp"
+                android:textAppearance="?android:textAppearanceMedium"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/tv_year"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Year"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textStyle="bold"/>
+            <EditText
+                android:id="@+id/et_year"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:hint="2008"
+                android:layout_marginLeft="20dp"
+                android:inputType="number"
+                android:textAppearance="?android:textAppearanceMedium"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/tv_rating"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Rating"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textStyle="bold"/>
+            <RatingBar
+                android:id="@+id/rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:numStars="5"
+                android:stepSize="0.5"
+                android:isIndicator="false"/>
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/btn_submit_review"
+        android:layout_below="@id/tbl"
+        android:text="Submit Review"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textAppearance="?android:textAppearanceMedium"/>
+
+    <Button
+        android:id="@+id/btn_show_existing"
+        android:layout_below="@id/btn_submit_review"
+        android:layout_marginTop="20dp"
+        android:text="View Existing Reviews"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textAppearance="?android:textAppearanceMedium"/>
+
+
+
+
+</RelativeLayout>
